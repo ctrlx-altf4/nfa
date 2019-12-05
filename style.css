@@ -248,7 +248,7 @@ a.active{
 }
 #application img{
 	width: 100%;
-	height: 75vh;
+	height: 350px;
 	box-shadow:3px -1px 5px 3px #D6D9D9;
 }
 #application #notice{
@@ -272,93 +272,85 @@ a.active{
 	text-transform:uppercase;
 	border-radius:3px;
 }
-.clip {
-    width: 31%;
-    padding-top: 23%;
+
+/*===========================WorkShop Section=====================*/
+#workshop{
+	background-color:#666666;
+	padding-top:20px;
+	margin-top:20px;
+}
+#back-layer{
+	background-color:#5E5E5E;
+}
+#workshop #container{
+	padding:10px 3px 150px;
+}
+#workshop-header{
+	font-family:'Open Sans', sans-serif;
+	color:white;
+	font-weight:bolder;
+}
+#video-strip{
+	display:flex;
+}
+#clip {
+    width:216px;
+    height:142px;
+    padding-top: 15px;
     position: relative;
     background-color: #000;
-    background-image:  
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff),        
-         
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff), 
-        linear-gradient(to right, #fff, #fff);
-
     background-repeat:no-repeat;
-    background-position: 
-        5% 5%,
-        15% 5%,
-        25% 5%, 
-        35% 5%,
-        45% 5%,
-        55% 5%,
-        65% 5%,
-        75% 5%, 
-        85% 5%,
-        95% 5%,
-             
-        5% 95%,
-        15% 95%,
-        25% 95%, 
-        35% 95%,
-        45% 95%,
-        55% 95%,
-        65% 95%,
-        75% 95%, 
-        85% 95%,
-        95% 95%;
-    
-    background-size:
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-            
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%,
-        5% 8%;
+    background-image: 
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff),
+    	linear-gradient(to right,#fff,#fff);
+
+    background-position:
+    	5%  5%,
+    	15% 5%,
+    	25%	5%,
+    	35%	5%,
+    	45%	5%,
+    	55%	5%,
+    	65%	5%,
+    	75%	5%,
+    	85%	5%,
+    	95%	5%,
+
+    	5%  95%,
+    	15% 95%,
+    	25%	95%,
+    	35%	95%,
+    	45%	95%,
+    	55%	95%,
+    	65%	95%,
+    	75%	95%,
+    	85%	95%,
+    	95%	95%;
+    background-size:5% 5%;
+    box-shadow:4px 4px 4px 5px #484544;
 }
-.clip .film {  
-  margin: 12% 5%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
+
+#clip #film {  
+  margin: 7% 5%;
   display: -webkit-grid;
   display: -ms-grid;
   -webkit-grid-columns: 1fr;
@@ -366,10 +358,155 @@ a.active{
   -ms-grid-columns: 1fr;
   -ms-grid-rows: 1fr;
 }
-.clip img {
+#clip figcaption{
+	margin-top:25px;
+	margin-left:10px;
+	color:white;
+	font-family:'Open Sans', 'sans-serif';
+	font-size: 12px;
+	font-weight:bold;
+}
+#clip figcaption span{
+	font-weight:normal;
+}
+#clip img {
   max-width: 100%;
   -webkit-grid-row-align: center;
   -ms-grid-row-align: center;
+}
+/*=====================Review=======================*/
+#review #container{
+	position:relative;
+	padding:0px 10px;
+}
+#review #raised-block{
+	position:relative;
+	top:-35px;
+	background:white;
+	width:70%;
+	margin:0px auto;
+
+}
+#raised-block #review-header{
+	text-align:center;
+	padding: 20px;
+}
+#review-header h1{
+	font-family:'Open Sans', 'sans-serif';
+	font-weight: bolder;
+	font-size:2.7em;
+	color:#484544;
+}
+#review-header hr{
+	width:9%;
+}
+#students img{
+	border-radius:50%;
+}
+.mid-image{
+	width:10%;
+	height:10%;
+	z-index:4;
+	position:relative;
+	box-shadow: inset 0 0 20px #000000;;
+}
+
+.side-image{
+	width:7%;
+	height:7%;
+	position:relative;
+	top:-15px;
+}
+.image1{
+	left:16px;
+	z-index:0;
+}
+.image2{
+	right:16px;
+	z-index:0;
+}
+#feedback{
+	position:relative;
+}
+blockquote{
+	color:#6D7677;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before { 
+content: open-quote;
+font-weight: bold;
+font-size:100px;
+color:#DDBA2E;
+position:absolute;
+top:-32px;
+left:20px;
+opacity:0.7;
+} 
+blockquote:after { 
+content: close-quote;
+font-weight: bold;
+font-size:100px;
+color:#DDBA2E; 
+position:absolute;
+top:0px;
+right:28px;
+opacity:0.7;
+}
+#rating .fa-star{
+	font-size:12px;
+}
+#rating .checked{
+	color:#FFC300 ;
+	font-size:12px;
+}
+#rater{
+	font-size:12px;
+	color:#6D7677;
+	padding-top:5px;
+}
+/*=====================NewsLetter===================*/
+#newsletter{
+	background-color:black;
+	margin-top:30px;
+	padding:30px;
+	padding-bottom:70px;
+}
+#newsletter h1{
+	color:#0786CD;
+	font-family:'Open Sans', 'sans-serif';
+}
+#newsletter p{
+	color:white;
+	font-family:'Open Sans', 'sans-serif';
+}
+form{
+	margin-top:12px;
+}
+form input{
+
+	height:25px;
+	width:186px;
+	padding:3px;
+	padding-left:10px;
+	border-top-left-radius: 30px 100%;
+  	border-bottom-left-radius: 30px 100%;
+  	border-top-right-radius: 30px 100%;
+  	border-bottom-right-radius: 30px 100%;
+  	background-color:#333333;
+  	border-radius:1px solid white;
+}
+form input::placeholder{
+	color:#0786CD;
+}
+form button{
+	border-top-left-radius: 30px 100%;
+  	border-bottom-left-radius: 30px 100%;
+  	border-top-right-radius: 30px 100%;
+  	border-bottom-right-radius: 30px 100%;
+  	background-color:#0786CD;
+  	padding:8px;
+  	width:120px;
 }
 
 
@@ -384,7 +521,7 @@ footer{
 #grid-footer{
 	display:grid;
 	grid-template-columns:2fr 1fr;
-	grid-gap:2em;
+	grid-gap:3em;
 }
 #contact-info h1, #contact-info p span{
 	color:#108CDD;
@@ -419,23 +556,28 @@ footer p{
 	margin-bottom:2em;
 	margin-left:1em;
 }
+#social{
+	text-align:center;
+
+}
 .fab{
 	color:white;
-	font-size:12px;
-	/*padding:5px;*/
-	/*border-radius:50%;*/
-	width:20px;
-	height:20px;
+	padding:5px;
+	border-radius:50%;
 }
 
 .fa-twitter{
 	background-color:#1DA1F2;
 }
 .fa-youtube{
-	padding:7px;
-	font-size:10px;
 	background-color:#FF0000;
 }
-.fa-facebook-f{
+.fa-facebook{
+	background-color:brown;
+}
+.fa-instagram{
 	background-color:#4267B2;
+}
+.fa-blogger{
+	background-color:#2EDDA5;
 }
